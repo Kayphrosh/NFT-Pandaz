@@ -65,6 +65,9 @@ nav li a {
     font-size: 12px;
     font-weight: 500;
 }
+nav li a:hover {
+    color: #a67c00;
+}
 .sm {
     display: flex;
     gap: 10px;
@@ -99,7 +102,9 @@ nav li a {
     color: #a67c00;
     cursor: pointer;
 }
-
+#left:hover, #right:hover {
+    color: #fff;
+}
 
 footer {
     display: flex;
@@ -160,7 +165,7 @@ main {
 .nft-image img {
     width: 100%;
     max-width: 500px;
-    height:350px;
+    height:340px;
     object-fit: cover;
     object-position: center center;
     border-radius: 20px;
@@ -172,20 +177,20 @@ main {
     position: relative;
     flex-basis: 50%;
     margin: auto 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 .main-content h2 {
     font-family: 'Anonymous Pro', monospace;
-    font-size: 4rem;
+    font-size: 3.8rem;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
 }
 .main-content p {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.01em;
-    color: f2f2f2;
+    color: #f2f2f2;
     margin-top: 1rem;
     width: 100%;
     max-width: 400px;
@@ -198,6 +203,9 @@ main {
 }
 
 @media (max-width: 756px) {
+    .heroe {
+        padding: 1rem 0;
+    }
     .top-bar {
         padding: 10px 1rem;
     }
