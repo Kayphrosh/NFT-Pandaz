@@ -4,8 +4,10 @@ const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
 const progress = document.getElementById('progress');
 const circles = document.querySelectorAll('.circle');
+const slide1 = document.getElementById('#slide1');
 
 
+// slide1 .addEventListener(click' )
 let activeSlide = 0
 
 rightBtn.addEventListener('click', () => {

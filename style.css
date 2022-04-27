@@ -43,6 +43,9 @@ a, a:active, a:hover, a:focus {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.89);
     background-image: url(./images/new\ black.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     background-blend-mode: multiply;
 }
 .top-bar {
@@ -207,10 +210,13 @@ main {
     max-width: 400px;
 }
 .main-content a {
+    height: fit-content;
     font-size: 14px;
     text-decoration: underline;
     margin-top: 1rem;
     color: #a67c00;
+    cursor: pointer;
+    z-index: 11111;
 }
 
 @media (max-width: 756px) {
