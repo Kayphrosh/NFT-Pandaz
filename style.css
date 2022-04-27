@@ -41,8 +41,8 @@ a, a:active, a:hover, a:focus {
     flex-direction: column;
     justify-content: space-around !important;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.836);
-    background-image: url(./images/bg.jpg);
+    background-color: rgba(0, 0, 0, 0.89);
+    background-image: url(./images/new\ black.jpg);
     background-blend-mode: multiply;
 }
 .top-bar {
@@ -56,10 +56,12 @@ a, a:active, a:hover, a:focus {
 .logo img{
     width: 40px;
 }
-
+.hamburger {
+    display: none;
+}
 nav {
     display: flex;
-
+    justify-content: center;
 }
 nav ul {
     display: flex;
@@ -78,6 +80,7 @@ nav li a:hover {
 }
 .sm {
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 .sm .iconify {
@@ -155,7 +158,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover; */
     position: absolute;
-    top: 30%;
+    top: 28%;
     left: 45%;
     transform: translate(-40%);
     transition: 0.2s ease;
@@ -211,15 +214,30 @@ main {
 }
 
 @media (max-width: 756px) {
+
     .heroe {
         padding: .5rem 0;
     }
     .top-bar {
         padding: 10px 1rem;
     }
-
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a67c00;
+        width: 40px;
+        height: 40px;
+    }
+    .hamburger .iconify {
+        font-size:36px;
+    }
     nav ul {
+        display: none;
         min-width: 150px;
+    }
+    .sm {
+        display: none;
     }
     .sm .iconify {
         font-size: 18px;
@@ -255,11 +273,11 @@ main {
     }
     #left {
         font-size: 30px;
-        left: 5px;
+        left: 0px;
     }
     #right {
         font-size: 30px;
-        right: 5px;
+        right: 0px;
     }
     footer {
         margin: auto;
