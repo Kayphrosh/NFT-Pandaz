@@ -204,7 +204,7 @@ main {
 
 @media (max-width: 756px) {
     .heroe {
-        padding: 1rem 0;
+        padding: .5rem 0;
     }
     .top-bar {
         padding: 10px 1rem;
@@ -219,8 +219,10 @@ main {
     .slide {
         flex-direction: column;
         align-items: flex-start;
-        top: 15%;
-        left: 41%;
+        top: 20%;
+        left: 45%;
+        transform: translateY(-45%);
+        transform: translateX(-45%);
     }
     .main-content {
         margin: 0 auto;
