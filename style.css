@@ -356,12 +356,18 @@ main {
     .main-content p {
         text-align: center;
         font-size: 14px;
-        margin-top: 1rem;
+        margin-top: .5rem;
         line-height: 26px;
     }
     .main-content a {
         margin: auto;
         margin-top: 1rem;
+    }
+    .slide:nth-child(1) .main-content{
+        padding: 0 1rem;
+    }
+    .slide:nth-child(1) .main-content p{
+        padding:0 1rem;
     }
     .nft-image {
         border-radius: 10px;
@@ -375,12 +381,12 @@ main {
     }
     #left {
         font-size: 40px;
-        top: 58%;
+        top: 55%;
         transform: translateY(-45%);
         left: 10px;
     }
     #right {
-        top: 58%;
+        top: 55%;
         transform: translateY(-45%);
         font-size: 40px;
         right: 10px;
