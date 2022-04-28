@@ -43,7 +43,7 @@ a, a:active, a:hover, a:focus {
     height: 100%;
     min-height: 100vh;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.938);
+    background-color: rgba(0, 0, 0, 0.75);
     background-image: url(./images/new\ black.jpg);
     background-repeat: no-repeat;
     background-position: center center;
