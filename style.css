@@ -362,12 +362,12 @@ main {
     #left {
         font-size: 30px;
         top: 50%;
-        transform: translateY(-50%)
+        transform: translateY(-50%);
         left: 0px;
     }
     #right {
         top: 50%;
-        transform: translateY(-50%)
+        transform: translateY(-50%);
         font-size: 30px;
         right: 0px;
     }
