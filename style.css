@@ -43,7 +43,7 @@ a, a:active, a:hover, a:focus {
     height: 100%;
     min-height: 100vh;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.7);
     background-image: url(./images/new\ black.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -72,16 +72,26 @@ nav ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    min-width: 200px;
+    min-width: 330px;
 }
-nav li a {
+.navbar li {
+    padding-bottom: 10px;
+}
+.navbar li a {
     align-self: center;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
 }
-nav li a:hover {
+.active-link {
     color: #a67c00;
+}
+.navbar li a:hover {
+    color: #a67c00;
+}
+.navbar .active-link {
+    color: #a67c00;
+    border-bottom: 2px solid #a67c00;
 }
 .sm {
     display: flex;
@@ -176,7 +186,7 @@ main {
 }
 .nft-image img {
     width: 100%;
-    max-width: 500px;
+    min-width: 500px;
     height:340px;
     object-fit: cover;
     object-position: center center;
@@ -196,8 +206,9 @@ main {
 }
 .main-content h2 {
     font-family: 'Anonymous Pro', monospace;
-    font-size: 3.8rem;
-    line-height: 65px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 60px;
     width: 100%;
     height: min-content;
     overflow: hidden;
@@ -219,6 +230,9 @@ main {
     color: #a67c00;
     cursor: pointer;
     z-index: 1;
+}
+.slide:nth-child(1) .main-content{
+    min-width: 100%;
 }
 @media (max-width:1040px) {
     .nft-image img {
@@ -355,21 +369,21 @@ main {
     }
     .nft-image img {
         width: 100%;
-        min-width: 320px !important; 
+        min-width: 350px !important; 
         height: 280px;
         border-radius: 10px;
     }
     #left {
-        font-size: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0px;
+        font-size: 40px;
+        top: 58%;
+        transform: translateY(-45%);
+        left: 10px;
     }
     #right {
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 30px;
-        right: 0px;
+        top: 58%;
+        transform: translateY(-45%);
+        font-size: 40px;
+        right: 10px;
     }
     footer {
         justify-content: center;
