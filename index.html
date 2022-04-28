@@ -16,13 +16,17 @@
                 <img src="./images/logo2.png" alt="">
             </div>
             <nav> 
-                <div class="hamburger">
-                    <span class="iconify" data-icon="ant-design:menu-outlined"></span>
+                <div class="hamburger" onclick="toggleNav()">
+                    <span class="iconify" data-icon="bx:menu"></span>
                 </div>
-                <ul>
-                    <li id="slide1"><a href="#">About</a></li>
-                    <li id="slide2"><a href="#">Theme</a></li>
-                    <li id="slide3"><a href="#"> Theme</a></li>
+                <ul class="navbar nav-active">
+                    <li><a href="index.html" class="active-link">About</a></li>
+                    <li><a href="theme.html">Theme</a></li>
+                    <li><a href="resources.html"> Resources</a></li>
+                    <div class="sm-nav">
+                        <span class="iconify" data-icon="akar-icons:discord-fill"></span>
+                        <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+                    </div>
                 </ul>
             </nav>
             <div class="sm">

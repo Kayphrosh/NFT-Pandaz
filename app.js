@@ -4,10 +4,8 @@ const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
 const progress = document.getElementById('progress');
 const circles = document.querySelectorAll('.circle');
-const slide1 = document.getElementById('#slide1');
 
 
-// slide1 .addEventListener(click' )
 let activeSlide = 0
 
 rightBtn.addEventListener('click', () => {
@@ -65,4 +63,16 @@ function update() {
         const actives = document.querySelectorAll('.active-step')
 
         progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%'
+}
+
+let toggleNavstatus = false;
+const navbar = document.querySelector('.navbar');
+let toggleNav = function() {
+    if (toggleNavstatus === false) {
+        navbar.style.display = 'flex'
+    }
+    else if (toggleNavstatus === true) {
+        navbar.style.display = 'none'
+         toggleNavstatus = false;
+    }
 }
