@@ -317,6 +317,7 @@ main {
     }
     .main {
         Padding: 0 1rem;
+    }
     .slide {
         flex-direction: column;
         align-items: flex-start;
