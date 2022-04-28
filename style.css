@@ -168,6 +168,7 @@ main {
     justify-content: center;
     margin: auto;
    display: none;
+   padding:0  2rem;
     /* position: absolute;
     top: 28%;
     left: 45%;
@@ -200,6 +201,7 @@ main {
     flex-basis: 50%;
     height: 100%;
     width: 100%;
+
     max-width: 400px;
     margin: auto 0;
     margin-left: 2rem;
@@ -335,6 +337,7 @@ main {
     .slide {
         flex-direction: column;
         align-items: flex-start;
+        padding:0 1rem;
         /* top: 17%;
         left: 45.5%;
         transform: translateY(-45%);
@@ -363,9 +366,9 @@ main {
         margin: auto;
         margin-top: 1rem;
     }
-    .slide:nth-child(1) .main-content{
+    /* .slide:nth-child(1) .main-content{
         padding: 0 1rem;
-    }
+    } */
     .slide:nth-child(1) .main-content p{
         padding:0 1rem;
     }
@@ -376,7 +379,7 @@ main {
     .nft-image img {
         width: 100%;
         min-width: 350px !important; 
-        height: 280px;
+        max-height: 260px;
         border-radius: 10px;
     }
     #left {
