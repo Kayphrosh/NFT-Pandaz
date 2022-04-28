@@ -69,10 +69,10 @@ let toggleNavstatus = false;
 const navbar = document.querySelector('.navbar');
 let toggleNav = function() {
     if (toggleNavstatus === false) {
-        navbar.style.display = 'flex'
+        navbar.style.display = 'flex';
     }
     else if (toggleNavstatus === true) {
-        navbar.style.display = 'none'
+        navbar.style.display = 'none';
          toggleNavstatus = false;
     }
 }
