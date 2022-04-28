@@ -43,7 +43,7 @@ a, a:active, a:hover, a:focus {
     height: 100%;
     min-height: 100vh;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
     background-image: url(./images/new\ black.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -362,10 +362,12 @@ main {
     #left {
         font-size: 30px;
         top: 50%;
+        transform: translateY(-50%)
         left: 0px;
     }
     #right {
         top: 50%;
+        transform: translateY(-50%)
         font-size: 30px;
         right: 0px;
     }
