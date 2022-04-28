@@ -74,6 +74,7 @@ const navbar = document.querySelector('.navbar');
 let toggleNav = function() {
     if (toggleNavstatus === false) {
         navbar.style.display = 'flex';
+        toggleNavstatus = true
     }
     else if (toggleNavstatus === true) {
         navbar.style.display = 'none';
