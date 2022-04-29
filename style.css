@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;600;700&family=Merriweather+Sans:wght@400;600;700;800&family=Poppins:wght@400;700&family=Raleway:wght@400;600;700;800&family=Roboto+Mono:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;600;700&family=Libre+Baskerville:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;600;700;800&family=Roboto+Mono:wght@400;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -44,10 +44,10 @@ a, a:active, a:hover, a:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
     min-height: 100vh;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.65);
     background-image: url(./images/new\ black.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -173,10 +173,8 @@ main {
     margin: auto;
    display: none;
    padding:0  2rem;
-    transition: all 0.2s ease-in ;
-    /* transition-property: translate(100px, 0);
-    transition-duration: 4s;
-    transition-timing-function: ease; */
+   transition-duration: 5s;
+   transition-delay: 2s;
 }
 .slide.active {
     display: flex;
@@ -193,7 +191,7 @@ main {
 .nft-image img {
     width: 100%;
     max-width: 350px;
-    height:300px;
+    height:280px;
     object-fit: cover;
     object-position: center center;
     border-radius: 20px;
@@ -212,10 +210,14 @@ main {
     margin-left: 2rem;
 }
 .main-content h2 {
-    font-family: 'Brygada 1918', serif;
+    /* font-family: 'Brygada 1918', serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Libre Baskerville', serif;
     font-size: 2.2rem;
     font-weight: 700;
+    letter-spacing: .2rem;
     line-height: 45px;
+    color: #fff;
     width: 100%;
     height: min-content;
     overflow: hidden;
@@ -295,32 +297,40 @@ main {
         top: 0;
         width: 100%;
         height: 100vh;
-        background-color: #000;
+        background-image: url(./images/new\ .jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-blend-mode: multiply;
         z-index: 1;
         padding:0 2rem;
+        padding-bottom: 1rem;
+        padding-top: 100px;
         transform: translate(0%);
         transition: all 0.5s ease-in;
     }
     .navbar li {
        display: flex;
-       justify-content: center;
-       margin-bottom: 2rem;
+       margin-bottom: 1.5rem;
 
     }
     .navbar a {
-        font-size: 24px;
-        padding-bottom: 2rem;
-        border-bottom: 1px solid #fff;
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 1.5rem;
+        border-bottom: 1.5px solid #fff;
+        transition:all 0.5s linear;
         width: 100%;
     }
     .navbar a:hover {
         color: #a67c00;
-        border-bottom: 1px solid #a67c00;
+        border-bottom: 1.5px solid #a67c00;
         transition: 0.2s ease-in;
     }
     .active-link {
         color: #a67c00;
-        border-bottom: 1px solid #a67c00;
+        border-bottom: 1.5px solid #a67c00;
     }
     .sm {
         display: none;
@@ -330,7 +340,7 @@ main {
     }
     .sm-nav {
         display: flex;
-        margin-top: 2rem;
+        margin-top: auto;
     }
     .sm-nav .iconify {
         font-size: 30px;
@@ -362,6 +372,7 @@ main {
     .main-content h2 {
         text-align: center;
         font-size: 2rem !important;
+        letter-spacing: .1rem;
         line-height: 45px;
         margin-left: 0;
     }
@@ -405,6 +416,6 @@ main {
     }
     footer {
         justify-content: center;
-        padding-bottom: 0rem;
+        padding-bottom: 1rem;
     }
 }
