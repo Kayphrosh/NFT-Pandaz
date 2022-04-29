@@ -316,7 +316,7 @@ main {
 
     }
     .navbar a {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 600;
         padding-bottom: 1.5rem;
         border-bottom: 1.5px solid #fff;
@@ -340,7 +340,7 @@ main {
     }
     .sm-nav {
         display: flex;
-        margin-top: auto;
+        margin-top: 3rem;
     }
     .sm-nav .iconify {
         font-size: 30px;
