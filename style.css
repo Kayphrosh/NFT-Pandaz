@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Poppins&family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;600;700&family=Merriweather+Sans:wght@400;600;700;800&family=Poppins:wght@400;700&family=Raleway:wght@400;600;700;800&family=Roboto+Mono:wght@400;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +17,10 @@ html {
     user-select: none;
     -webkit-tap-highlight-color: transparent; 
 }
+@font-face {
+    font-family: 'chalmers';
+    src: url(./fonts/Chalmers\ Typeface.otf);
+  }
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -43,7 +47,7 @@ a, a:active, a:hover, a:focus {
     height: 100%;
     min-height: 100vh;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     background-image: url(./images/new\ black.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -72,7 +76,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    min-width: 330px;
+    min-width: 350px;
 }
 .navbar li {
     padding-bottom: 10px;
@@ -169,14 +173,15 @@ main {
     margin: auto;
    display: none;
    padding:0  2rem;
-    /* position: absolute;
-    top: 28%;
-    left: 45%;
-    transform: translate(-40%); */
-    transition: 0.2s ease ;
+    transition: all 0.2s ease-in ;
+    /* transition-property: translate(100px, 0);
+    transition-duration: 4s;
+    transition-timing-function: ease; */
 }
 .slide.active {
     display: flex;
+    transition-duration: 4s;
+    transition-timing-function: ease;
 }
 .nft-image {
     display: flex;
@@ -187,8 +192,8 @@ main {
 }
 .nft-image img {
     width: 100%;
-    min-width: 500px;
-    height:340px;
+    max-width: 350px;
+    height:300px;
     object-fit: cover;
     object-position: center center;
     border-radius: 20px;
@@ -207,10 +212,10 @@ main {
     margin-left: 2rem;
 }
 .main-content h2 {
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 3.5rem;
+    font-family: 'Brygada 1918', serif;
+    font-size: 2.2rem;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 45px;
     width: 100%;
     height: min-content;
     overflow: hidden;
@@ -271,6 +276,9 @@ main {
         z-index: 111;
         cursor: pointer;
     }
+    .hamburger #close {
+        display: none;
+    }
     .hamburger .iconify {
         font-size:36px;
     }
@@ -290,7 +298,8 @@ main {
         background-color: #000;
         z-index: 1;
         padding:0 2rem;
-        transition: all 0.8s ease;
+        transform: translate(0%);
+        transition: all 0.5s ease-in;
     }
     .navbar li {
        display: flex;
@@ -352,8 +361,8 @@ main {
     }
     .main-content h2 {
         text-align: center;
-        font-size: 2.5rem !important;
-        line-height: 48px;
+        font-size: 2rem !important;
+        line-height: 45px;
         margin-left: 0;
     }
     .main-content p {
@@ -378,7 +387,7 @@ main {
     }
     .nft-image img {
         width: 100%;
-        min-width: 350px !important; 
+        min-width: 300px !important; 
         max-height: 260px;
         border-radius: 10px;
     }

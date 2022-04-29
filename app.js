@@ -4,7 +4,6 @@ const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
 const progress = document.getElementById('progress');
 const circles = document.querySelectorAll('.navbar a');
-// const link = document.querySelectorAll('.navbar a');
 
 let activeSlide = 0
 
@@ -57,7 +56,7 @@ function update() {
         if(idx === currentActive) {
             circle.classList.add('active-link')
             circle.style.color = '#a67c00';
-            circle.style.borderBottom = '1px solid #a67c00';
+            circle.style.borderBottom = '2px solid #a67c00';
         } else{
             circle.classList.remove('active-link')
             circle.style.color = '#ffffff';
@@ -65,19 +64,25 @@ function update() {
         }
 
     })
-        // const actives = document.querySelectorAll('.active-link')
-        // circles.style.color = (actives.length - 1) / (circles.length - 1) * 100 + '#fff'
 }
 
 let toggleNavstatus = false;
 const navbar = document.querySelector('.navbar');
+const opennav = document.querySelector('.hamburger #open');
+const closeNav = document.querySelector('.hamburger #close');
 let toggleNav = function() {
     if (toggleNavstatus === false) {
         navbar.style.display = 'flex';
-        toggleNavstatus = true
+        navbar.style.transform = 'translate(0%)';
+        opennav.style.display = 'none'
+        closeNav.style.display = 'flex'
+        toggleNavstatus = true;
     }
     else if (toggleNavstatus === true) {
-        navbar.style.display = 'none';
+        // navbar.style.display = 'none';
+        navbar.style.transform = 'translate(100%)';
+        closeNav.style.display = 'none'
+        opennav.style.display = 'flex'
          toggleNavstatus = false;
     }
 }
