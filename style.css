@@ -304,7 +304,7 @@ main {
         background-color: rgba(0, 0, 0, 0.6);
         background-blend-mode: multiply;
         z-index: 1;
-        padding:0 2rem;
+        padding:0 1rem;
         padding-bottom: 1rem;
         padding-top: 100px;
         transform: translate(0%);
