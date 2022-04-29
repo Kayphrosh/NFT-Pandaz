@@ -258,7 +258,7 @@ main {
     .heroe {
         padding: .5rem 0;
         padding-bottom:  5px;
-        max-height: 100vh;
+        min-height: calc(100vh - 60px);
     }
     .top-bar {
         align-items: center;
