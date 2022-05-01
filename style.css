@@ -258,7 +258,8 @@ main {
     .heroe {
         padding: .5rem 0;
         padding-bottom:  5px;
-        min-height: calc(100vh - 60px);
+        height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
     }
     .top-bar {
         align-items: center;
@@ -417,6 +418,5 @@ main {
     }
     footer {
         justify-content: center;
-        padding-bottom: 2rem;
     }
 }
