@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;600;700&family=Libre+Baskerville:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;600;700;800&family=Roboto+Mono:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@300;400;600;700&family=Raleway&family=Roboto:wght@400;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -47,8 +47,8 @@ a, a:active, a:hover, a:focus {
     height: 100vh;
     max-height: 100vh;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.65);
-    background-image: url(./images/new\ black.jpg);
+    background-color: rgba(0, 0, 0, 0.644);
+    background-image: url(./images/new\ .jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -120,7 +120,7 @@ nav ul {
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #a67c00;
     cursor: pointer;
 }
@@ -131,7 +131,7 @@ nav ul {
     background-color: transparent;
     border: none;
     outline: none;
-    font-size:2.5rem;
+    font-size:2rem;
     color: #a67c00;
     cursor: pointer;
 }
@@ -191,7 +191,7 @@ main {
 .nft-image img {
     width: 100%;
     max-width: 350px;
-    height:280px;
+    height:250px;
     object-fit: cover;
     object-position: center center;
     border-radius: 20px;
@@ -212,7 +212,7 @@ main {
 .main-content h2 {
     /* font-family: 'Brygada 1918', serif; */
     /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Acme', sans-serif;
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: .2rem;
