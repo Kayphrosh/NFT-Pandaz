@@ -84,7 +84,10 @@ let toggleNav = function () {
     navbar.style.transform = 'translate(0%)';
     opennav.style.display = 'none';
     closeNav.style.display = 'flex';
+    navbar.style.animation = 'animateNav 0.8s ease forwards 1'
+    navbar.style.animationDelay = '0.1s'
     toggleNavstatus = true;
+    
   } else if (toggleNavstatus === true) {
     // navbar.style.display = 'none';
     navbar.style.transform = 'translate(100%)';

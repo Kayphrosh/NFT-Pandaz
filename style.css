@@ -178,7 +178,7 @@ main {
 }
 .slide.active {
     display: flex;
-    animation:animateHeading 0.8s ease forwards 1;
+    animation: animateHeading 0.8s ease forwards 1;
     animation-delay: .1s;
     /* transform: translateX(-100%); */
 }
@@ -265,7 +265,7 @@ main {
     .heroe {
         padding: .5rem 0;
         padding-bottom:  5px;
-        height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+        height: 100vh; 
         height: calc(var(--vh, 1vh) * 100);
     }
     .top-bar {
@@ -310,14 +310,14 @@ main {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: rgba(65, 65, 65, 0.6);
+        background-color: rgba(65, 65, 65, 0.8);
         background-blend-mode: multiply;
         z-index: 1;
         padding:0 1rem;
         padding-bottom: 1rem;
         padding-top: 100px;
         transform: translate(0%);
-        transition: all .4s ease-in;
+        transition: 0.3s ease;
     }
     .navbar li {
        display: flex;
