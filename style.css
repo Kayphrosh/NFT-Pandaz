@@ -173,20 +173,33 @@ main {
     margin: auto;
    display: none;
    padding:0  2rem;
-   transition-duration: 5s;
-   transition-delay: 2s;
+   transform: translateX(150%);
+   transition:.8s linear;
 }
 .slide.active {
     display: flex;
-    transition-duration: 4s;
-    transition-timing-function: ease;
+    /* transition-duration: 4s; */
+    /* transition-timing-function: ease; */
+    /* transition: all 1.5s ease-in-out; */
+    animation:animateHeading .8s linear forwards 1;
+    animation-delay:.2s;
+    /* transform: translateX(-100%); */
 }
+@keyframes animateHeading{
+    to{
+        transform: translateX(00%);
+    }
+  }
+/* #slide2 {
+        transform: translateX(-100%);
+} */
 .nft-image {
     display: flex;
     justify-content: flex-end;
     flex-basis: 50%;
     margin: auto;
     border-radius: 20px;
+    
 }
 .nft-image img {
     width: 100%;
