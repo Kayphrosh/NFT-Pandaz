@@ -179,7 +179,7 @@ main {
 .slide.active {
     display: flex;
     animation:animateHeading 0.8s ease forwards 1;
-    animation-delay: 0s;
+    animation-delay: .3s;
     /* transform: translateX(-100%); */
 }
 @keyframes animateHeading{
