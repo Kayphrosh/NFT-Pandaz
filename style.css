@@ -179,7 +179,7 @@ main {
 .slide.active {
     display: flex;
     animation:animateHeading 0.8s ease forwards 1;
-    animation-delay: .5s;
+    animation-delay: .1s;
     /* transform: translateX(-100%); */
 }
 @keyframes animateHeading{
@@ -187,9 +187,6 @@ main {
         transform: translateX(00%);
     }
   }
-/* #slide2 {
-        transform: translateX(-100%);
-} */
 .nft-image {
     display: flex;
     justify-content: flex-end;
