@@ -174,15 +174,15 @@ main {
    display: none;
    padding:0  2rem;
    transform: translateX(150%);
-   transition:.8s linear;
+   transition: 0.5s linear;
 }
 .slide.active {
     display: flex;
     /* transition-duration: 4s; */
     /* transition-timing-function: ease; */
     /* transition: all 1.5s ease-in-out; */
-    animation:animateHeading .8s linear forwards 1;
-    animation-delay:.2s;
+    animation:animateHeading 0.5s linear forwards 1;
+    animation-delay: 0.2s;
     /* transform: translateX(-100%); */
 }
 @keyframes animateHeading{
