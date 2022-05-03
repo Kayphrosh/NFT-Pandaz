@@ -263,8 +263,7 @@ main {
 @media (max-width: 786px) {
 
     .heroe {
-        padding: .5rem 0;
-        padding-bottom:  5px;
+        padding: .2rem 0;
         height: 100vh; 
         height: calc(var(--vh, 1vh) * 100);
     }
@@ -395,9 +394,6 @@ main {
         margin: auto;
         margin-top: 1rem;
     }
-    /* .slide:nth-child(1) .main-content{
-        padding: 0 1rem;
-    } */
     .slide:nth-child(1) .main-content p{
         padding:0 1rem;
     }
