@@ -174,11 +174,11 @@ main {
    display: none;
    padding:0  2rem;
    transform: translateX(150%);
-   transition: 0.3s ease-in-out;
+   transition: 0.8s ease;
 }
 .slide.active {
     display: flex;
-    animation:animateHeading 0.3s ease-in-out forwards 1;
+    animation:animateHeading 0.8s ease forwards 1;
     animation-delay: 0s;
     /* transform: translateX(-100%); */
 }
