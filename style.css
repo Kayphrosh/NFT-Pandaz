@@ -174,13 +174,13 @@ main {
    display: none;
    padding:0  2rem;
    transform: translateX(150%);
-   transition: 0.8s ease;
+   transition: 0.5s ease;
 }
 .slide.active {
     display: flex;
-    animation: animateHeading 0.8s ease forwards 1;
-    animation-delay: .1s;
-    /* transform: translateX(-100%); */
+    animation: animateHeading 0.5s ease forwards 1;
+    animation-delay: 0.1s;
+
 }
 @keyframes animateHeading{
     to{
@@ -365,10 +365,6 @@ main {
         flex-direction: column;
         align-items: flex-start;
         padding:0 1rem;
-        /* top: 17%;
-        left: 45.5%;
-        transform: translateY(-45%);
-        transform: translateX(-45%); */
     }
     .main-content {
         align-items: center;
