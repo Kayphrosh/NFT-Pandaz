@@ -47,8 +47,8 @@ a, a:active, a:hover, a:focus {
     height: 100vh;
     max-height: 100vh;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.644);
-    background-image: url(./images/new\ .jpg);
+    background-color: rgba(0, 0, 0, 0.301);
+    background-image: url(./images/bgg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -102,8 +102,20 @@ nav ul {
     justify-content: center;
     gap: 10px;
 }
+
 .sm .iconify {
-    font-size: 22px;
+    font-size: 18px;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+}
+.sm .iconify:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: #a67c00;
+    color: #fff;
+    border-radius: 5px;
+    /* padding: 8px; */
 }
 .sm-nav {
     display: none;
@@ -283,6 +295,7 @@ main {
         background-color: #a67c00;
         width: 36px;
         height: 36px;
+        border-radius: 5px;
         z-index: 111;
         cursor: pointer;
     }
@@ -309,7 +322,7 @@ main {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: rgba(65, 65, 65, 0.8);
+        background-color: rgba(0, 0, 0, 0.678);
         background-blend-mode: multiply;
         z-index: 1;
         padding:0 1rem;
