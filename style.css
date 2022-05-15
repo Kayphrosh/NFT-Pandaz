@@ -293,8 +293,8 @@ main {
         justify-content: center;
         align-items: center;
         background-color: #a67c00;
-        width: 36px;
-        height: 36px;
+        width: 32px;
+        height: 32px;
         border-radius: 5px;
         z-index: 111;
         cursor: pointer;
@@ -303,7 +303,7 @@ main {
         display: none;
     }
     .hamburger .iconify {
-        font-size:30px;
+        font-size:24px;
     }
     nav ul {
         display: none;
