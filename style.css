@@ -122,7 +122,7 @@ nav ul {
     display: none;
 }
 .slider-btn {
-    display: flex;
+    display: none;
 }
 
 #left {
@@ -345,7 +345,6 @@ main {
         min-width: 150px;
     }
     .navbar {
-        /* display: none; */
         justify-content: center;
         flex-direction: column;
         position:absolute;
@@ -444,7 +443,7 @@ main {
         top: 20%;
     }
     .main-content:nth-child(1) h2 {
-        line-height: 72px;
+        line-height: 78px !important;
         font-size: 4.5rem !important;
     }
     .front-page{
