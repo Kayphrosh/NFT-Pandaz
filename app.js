@@ -4,15 +4,15 @@ const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
 const progress = document.getElementById('progress');
 const circles = document.querySelectorAll('.navbar a');
+const pandaz = document.querySelector('.front-page');
 
-// let slidersOption = document.querySelectorAll('#slide2') 
-
-// let l = 0;
-// if ( l > slidersOption.length) {
-//     slidersOption.style.transform = 'translateX(50%)'
-
-//     l++
-// }
+function displayPandaz() {
+  if(activeSlide > 0 ){
+    pandaz.style.display = 'none';
+  } else {
+    pandaz.style.display = 'flex';
+  }
+}
 
 let activeSlide = 0;
 
@@ -23,6 +23,7 @@ if (activeSlide > slides.length - 1) {
 }
   setBgToBody();
   setActiveSlide();
+  displayPandaz();
 });
 leftBtn.addEventListener('click', () => {
   activeSlide--;
@@ -31,6 +32,7 @@ leftBtn.addEventListener('click', () => {
   }
   setBgToBody();
   setActiveSlide();
+  displayPandaz();
 });
 
 setBgToBody();
@@ -64,11 +66,11 @@ function update() {
   circles.forEach((circle, idx) => {
     if (idx === currentActive) {
       circle.classList.add('active-link');
-      circle.style.color = '#a67c00';
-      circle.style.borderBottom = '2px solid #a67c00';
+      circle.style.color = "#FFFFFF";
+      circle.style.borderBottom = '2px solid #FFF';
     } else {
       circle.classList.remove('active-link');
-      circle.style.color = '#ffffff';
+      circle.style.color = '#FFF';
       circle.style.border = 'none';
     }
   });
@@ -99,3 +101,11 @@ let toggleNav = function () {
 
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+const faqToggle = document.querySelectorAll('.faq')
+
+faqToggle.forEach(faq => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("faq-active")
+  })
+})
